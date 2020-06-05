@@ -2,43 +2,43 @@ public class Triangle{
 
 	public String CheckTriangle(double a, double b, double c) {
 		if (a <= 0 || b <= 0 || c <= 0) {
-			return "不是三角形";
+			return "not triangle";
 		}
 		if (a+b > c && b+c > a && c+a > b) {
 			if (a == b) {
 				if (b == c) {
-					return "正三角形";
+					return "Equilateral triangle";
 				}
 				else if (a*a + b*b - c*c <= 0.04*a*a) {
-					return "等腰直角三角形";
+					return "Isosceles right triangle";
 				}
 				else {
-					return "等腰三角形";
+					return "Isosceles triangle";
 				}
 			}
 			else if (b == c) {
 				if (b*b + c*c - a*a <= 0.04*b*b) {
-					return "等腰直角三角形";
+					return "Isosceles right triangle";
 				}
 				else {
-					return "等腰三角形";
+					return "Isosceles triangle";
 				}
 			}
 			else if(a == c){
 					if (a*a + c*c - b*b <= 0.04*a*a) {
-						return "等腰直角三角形";
+						return "Isosceles right triangle";
 					}
 					else {
-						return "等腰三角形";
+						return "Isosceles triangle";
 					}
 			}
 			if (a*a + b*b == c*c || b*b + c*c == a*a || a*a + c*c == b*b) {
-				return "直角三角形";
+				return "Right triangle";
 			}
 			else {
-				return "一般三角形";
+				return "Triangle";
 			}
 		}
-		return "不是三角形";
+		return "not triangle";
 	}
 }
