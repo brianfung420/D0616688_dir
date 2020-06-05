@@ -20,6 +20,7 @@ plugins {
 javadoc.options.encoding = 'UTF-8'
 compileJava.options.encoding = 'UTF-8'
 
+
 repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
